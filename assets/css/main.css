@@ -2,3 +2,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.whyStudy {
+	@apply py-14 bg-cover bg-center relative;
+}
+
+.whyStudy div {
+	@apply relative;
+}
+
+.whyStudy:before {
+	content: "";
+	@apply absolute top-0 bottom-0 right-0 left-0 bg-sky-800 bg-opacity-80 backdrop-blur-sm;
+	z-index: 0;
+};
+
+.menu {
+	@apply h-0;
+}
+
+.activeMenu {
+	@apply pt-10 h-auto;
+	height: auto !important;
+}
+
+.menuLink ul {
+	@apply hidden;
+}
+
+.menuLink:hover ul {
+	@apply grid;
+};

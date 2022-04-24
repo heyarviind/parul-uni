@@ -4,6 +4,50 @@
     {{ partial "head.html" . }}
 </head>
 <body>
-{{ block "main" . }}{{ end }}
+    {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+    <script>
+        $(".tab").first().addClass("bg-red-600").removeClass("bg-sky-900");
+        $(".tabContent").first().removeClass("hidden");
+
+        $(".tab").click(function() {
+            const id = $(this).data("id");
+
+            $(".tab").removeClass("bg-red-600").addClass("bg-sky-900");
+            $(this).addClass("bg-red-600").removeClass("bg-sky-900");
+            $(`.tabContent`).addClass("hidden");
+            $("#" + id).removeClass("hidden");
+        });
+
+        $(".toggleMobileMenu").click(() => {
+            if ($("#mobileMenu").hasClass("activeMenu")) {
+                $("#mobileMenu").removeClass("activeMenu");
+            } else {
+                $("#mobileMenu").addClass("activeMenu");
+            }
+        });
+
+        $("#preHeaderToggle").click(() => {
+            if ($("#preHeader").hasClass("hidden")) {
+                $("#preHeader").removeClass("hidden");
+                $("#preHeaderToggle").addClass("rotate-180");
+            } else {
+                $("#preHeader").addClass("hidden");
+                $("#preHeaderToggle").removeClass("rotate-180");
+            }
+        });
+
+        $(".mobileExpandLink").click(() => {
+            if ($(".mobileExpandLink ul").hasClass("hidden")) {
+                $(".mobileExpandLink ul").removeClass("hidden");
+            } else {
+                $(".mobileExpandLink ul").addClass("hidden");
+            }
+        });
+    </script>
 </body>
 </html>

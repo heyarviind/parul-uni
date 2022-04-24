@@ -1,0 +1,77 @@
+<div class="bg-sky-900 py-1.5">
+	<div class="flex-col md:flex-row justify-between container mx-auto px-4 hidden md:flex" id="preHeader">
+		<div class="flex-1"></div>
+		<div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-sm text-white">
+			<a href="">ARIAA</a>
+			<a href="">Student Services</a>
+			<a href="">Libraries</a>
+			<a href="">Careers</a>
+			<a href="">Center of Research CR4D</a>
+			<a href="">PU Infrastructure</a>
+		</div>
+	</div>
+
+	<span class="md:hidden absolute -mb-14 left-1/2 cursor-pointer pt-2" id="preHeaderToggle">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+	</span>
+</div>
+
+<div class="bg-white shadow py-3">
+	<header class="flex justify-between items-center container mx-auto px-4">
+		<div>
+			<img src="http://rimtpreview.online/pu-web/images/logo.png" width="190px" />
+		</div>
+
+		<div class="md:hidden toggleMobileMenu">
+			<span class="p-2 border rounded-lg block hover:bg-gray-100 cursor-pointer">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+			</span>
+		</div>
+
+
+
+		<div class=" hidden font-semibold text-sm text-gray-800  md:block bg-white">
+			<ul class="flex items-center space-x-6">
+				<li><a href="">Who We Are</a></li>
+				<li><a href="">Admissions</a></li>
+				<li class="relative menuLink">
+					<a href="">Faculties</a>
+					<ul class="absolute w-96 rounded bg-sky-900 bg-opacity-75 grid grid-cols-2 text-white text-sm">
+						{{ range where .Site.Pages "Section" "faculty" }}
+						  {{ if ne .Title "Faculties" }} 
+						      <li><a class="p-2 block hover:underline" href="{{.Permalink}}">{{ .Title }}</a></li>
+						   {{ end }}
+						{{ end }}
+						
+					</ul>
+				</li>
+				<li><a href="">Academics</a></li>
+				<li><a href="">Placements</a></li>
+				<li><a href="">International</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="mobileMenu" class=" h-0 px-8 font-semibold text-sm text-gray-800 md:hidden bg-white overflow-hidden transition-all duration-300 ease-in-out menu">
+		<ul class="flex flex-col items-start space-y-4">
+			<li><a href="">Who We Are</a></li>
+			<li><a href="">Admissions</a></li>
+			<li class="mobileExpandLink">
+				<a class="flex" href="#0">Faculties <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+				<ul class="hidden p-3 bg-gray-100 rounded ml-4 mt-2">
+					{{ range where .Site.Pages "Section" "faculty" }}
+					  {{ if ne .Title "Faculties" }} 
+					      <li><a class="p-2 block hover:underline" href="{{.Permalink}}">{{ .Title }}</a></li>
+					   {{ end }}
+					{{ end }}
+				</ul>
+			</li>
+			<li><a href="">Academics</a></li>
+			<li><a href="">Placements</a></li>
+			<li><a href="">International</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+		
+	</div>
+</div>

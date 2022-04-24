@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="h-[300px] md:h-[500px] flex bg-cover bg-center items-center" style="background-image: url('/img/faculty/{{.Params.coverImage}}');">
+	<div class="container mx-auto flex px-4">
+		<div class="max-w-xl">
+			<h1 class="text-3xl md:text-4xl lg:text-7xl font-black text-white">{{ .Params.coverHeading }}</h1>
+			<hr class="my-4 w-[40%] border-t-4 border-white rounded" />
+			<span class="text-xl md:text-3xl text-white mt-4 block">
+				{{ .Params.coverDescription }}
+			</span>
+		</div>
+		<div class="flex-1"></div>
+	</div>
+</div>
+
+<div class="bg-gray-100">
+	<div class="bg-sky-900 py-10">
+		<h2 class="text-4xl font-black text-center text-white">Our Programs</h2>
+	</div>
+	<section class="container mx-auto py-10 px-4">
+	
+	<div class="mt-10 text-center">
+		<div class="rounded-lg overflow-hidden flex md:inline-flex flex-col md:flex-row">
+
+			{{ range .Params.programs }}
+				<a href="#0" data-id="{{ .name | urlize }}" class="tab bg-sky-900 bg-red-600 px-3 py-2 text-white mb-0.5 block hover:bg-red-600 cursor-pointer">{{ .name }}</a>
+			{{ end }}
+		</div>
+
+		<div class="flex-1 mt-10">
+
+			{{ range .Params.programs }}
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-4 tabContent hidden" id="{{ .name | urlize }}">
+					{{ range .courses }}
+						<div class="rounded-lg bg-white shadow p-3 text-sm flex items-center">
+							<div class="w-[40px] text-center"><img src="/img/faculty/{{ .icon }}" class="mx-auto" /></div>
+							<div class="flex-1 font-semibold">{{ .name }}</div>
+						</div>
+					{{ end }}
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+</div>
+
+
+<section class="flex flex-col md:flex-row">
+	<div class="p-14 flex-1 bg-cover bg-center" style="background-image: url('/img/faculty/{{ .Params.aboutImage  }}');">
+		<h2 class="text-4xl font-black text-white">{{ .Params.aboutTitle }}</h2>
+	</div>
+	<div class="p-14 flex-1">
+		{{ .Params.aboutDescription }}
+	</div>
+</section>
+
+<section class="whyStudy" style="background-image: url('/img/faculty/{{ .Params.whyImage  }}');">
+	<div class="container mx-auto z-10 px-4">
+		<h2 class="text-center text-4xl font-black text-white">{{ .Params.whyTitle }}</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+			{{ range .Params.whyItems }}
+				<div class="flex items-center">
+					<div class="border-r-2 border-white pr-6 mr-6">
+						<img src="/img/faculty/{{ .icon }}" />
+					</div>
+					<div class="text-lg text-white">
+						{{ .description }}
+					</div>
+				</div>
+			{{ end }}
+	</div>
+</section>
+
+<section class="bg-cover bg-center" style="background-image: url('/img/faculty/upgrade.jpeg');">
+	<div class="container mx-auto py-20 px-4">
+		<h2 class="text-5xl font-white font-black max-w-xl">{{ .Params.upgradeTitle }}</h2>
+		<p class="max-w-xl text-lg mt-4">{{ .Params.upgradeDescription }}</p>
+
+		<div class="mt-10 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+			{{ range .Params.upgradeItems }}
+				<div class="w-52 bg-white shadow p-8 rounded-lg text-lg font-semibold">
+				{{ .title }}
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section class="container mx-auto py-20 border-y px-4">
+	<div class="flex flex-col md:flex-row">
+		<div class="w-[400px] mb-4 md:mb-0">
+			<img src="http://rimtpreview.online/app/20220120/images/faculty/754838DrVipulVekaria.png" width="200px" class="mx-auto rounded-lg" />
+		</div>
+		<div class="flex-1">
+			<h2 class="text-4xl font-black">Message from the Dean</h2>
+			<hr class="w-[40%] border-t-2 border-black rounded my-4" />
+			<p class="text-gray-500">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+
+			<span class="block mt-4 font-bold">Mr. Lorem</span>
+		</div>
+	</div>
+</section>
+
+<section class="container mx-auto py-20 hidden">
+	<h2 class="text-4xl font-black text-center">RIMT Advantage</h2>
+
+	<div class="grid grid-cols-4 grid-gap-10 text-center mt-16">
+		<div>
+			<img src="http://rimtpreview.online/app/202002/images/post/section_container/image/9356561.jpg" width="190px" class="rounded-full mx-auto shadow-lg mb-4" />
+			<div class="text-lg text-center font-semibold max-w-xs mx-auto">A Platform for Comprehensive Learning</div>
+		</div>
+		<div>
+			<img src="http://rimtpreview.online/app/202002/images/post/section_container/image/4591772.jpg" width="190px" class="rounded-full mx-auto shadow-lg mb-4" />
+			<div class="text-lg text-center font-semibold max-w-xs mx-auto">Ranked amongst Top 50 Private Universities in India</div>
+		</div>
+		<div>
+			<img src="http://rimtpreview.online/app/202002/images/post/section_container/image/7964073.jpg" width="190px" class="rounded-full mx-auto shadow-lg mb-4" />
+			<div class="text-lg text-center font-semibold max-w-xs mx-auto">Experience the Most Vibrant Campus Life</div>
+		</div>
+		<div>
+			<img src="http://rimtpreview.online/app/202002/images/post/section_container/image/4008594.jpg" width="190px" class="rounded-full mx-auto shadow-lg mb-4" />
+			<div class="text-lg text-center font-semibold max-w-xs mx-auto">An Enriching Exposure to Global Cultures</div>
+		</div>
+	</div>
+
+	<div class="mt-10 text-center">
+		<button class="px-4 py-2 rounded bg-sky-800 text-white font-semibold shadow-lg hover:bg-sky-600">Explore More</button>
+	</div>
+</section>
+
+{{ end }}
