@@ -1,0 +1,164 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="h-[300px] md:h-[500px] flex bg-cover bg-center items-center" style="background-image: url('/img/faculty/{{.Params.coverImage}}');">
+	<div class="container mx-auto flex px-4">
+		<div class="max-w-xl">
+			<h1 class="text-3xl md:text-4xl lg:text-7xl font-black text-white">{{ .Params.coverHeading }}</h1>
+			<hr class="my-4 w-[40%] border-t-4 border-white rounded" />
+			<span class="text-xl md:text-3xl text-white mt-4 block">
+				{{ .Params.coverDescription }}
+			</span>
+		</div>
+		<div class="flex-1"></div>
+	</div>
+</div>
+
+<section class="flex flex-col md:flex-row">
+	<div class="flex-1 p-10 lg:p-28 whyStudy">
+		<div>
+			<h2 class="text-4xl font-black text-white">{{ .Params.aboutTitle }}</h2>
+			<p class="text-base text-white mt-4">{{ .Params.aboutDescription }}</p>
+		</div>
+	</div>
+	<div class="flex-1">
+		<img src="/img/course/banner1.png" class="w-full" />
+	</div>
+</section>
+
+<section class="bg-gray-100 py-20">
+	<div class="container mx-auto">
+		<div class="flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-5">
+			{{ range .Params.features }}
+			<div class="flex flex-col max-w-[190px] text-center">
+				<div>
+					<img src="/img/course/{{.icon}}" width="50px" class="mx-auto mb-3" />
+				</div>
+				<div class="font-bold text-lg">{{ .title }}</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section class="">
+	<div class="flex flex-col md:flex-row p-10 space-y-5 md:space-y-0 md:space-x-5">
+		<div class="flex-1">
+			<img src="/img/course/chandigarh-university.png" class="w-full" />
+		</div>
+		<div class="flex-1">
+			<img src="/img/course/detailed-report.png" class="w-full" />
+		</div>
+	</div>
+</section>
+
+<section class="whyStudy px-4" style="background-image: url('/img/course/{{ .Params.feeImage  }}');">
+	<div class="container mx-auto">
+		<div class="flex justify-between border-b-2 border-white pb-4 mb-4">
+			<div>
+				<h2 class="text-4xl font-bold text-white">Fees</h2>
+			</div>
+			<div class="flex space-x-3">
+				<select>
+					<option>Country</option>
+				</select>
+
+				<select>
+					<option>State</option>
+				</select>
+			</div>
+		</div>
+
+		<div>
+			<h3 class="text-2xl text-white font-bold">{{ .Params.feeTitle }}</h3>
+			<h4 class="text-xl text-white font-semibold mt-2">{{ .Params.feeString }}</h4>
+			<div class="mt-2 text-white opacity-60">{{ .Params.feeSubString }}</div>
+		</div>
+	</div>
+</section>
+
+<section class="whyStudy px-4" style="background-image: url('/img/course/{{ .Params.feeImage  }}');">
+	<div class="container mx-auto">
+		<h2 class="text-6xl font-black text-center text-white underline">Facilities</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
+			{{ range .Params.facilites }}
+				<div class="flex">
+					<div class="mr-4">
+						<img src="/img/course/{{ .image }}" width="160px" height="160px" class="rounded-full border-2 border-white" />
+					</div>
+					<div>
+						<h3 class="font-bold text-2xl text-white">{{ .title }}</h3>
+						<p class="text-white opacity-70 text-sm mt-3">{{ .description }}</p>
+						<button class="bg-white rounded px-3 py-1.5 mt-4">Read More</button>
+					</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section class="py-14 px-4">
+	<div class="container mx-auto">
+		<h2 class="text-4xl font-black text-center text-gray-800">Top Campus <span class="text-red-600">Recruiters</span></h2>
+		<p class="text-gray-800 text-center text-lg mt-2 max-w-[900px] mx-auto">We have strong links with more than 500+ blue chip organizations to give valueable real-world experience that will goost your employment prospects.</p>
+
+		<div class="grid grid-cols-3 md:grid-cols-7 gap-10 mt-16">
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+			<div>
+				<img src="/img/course" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-gray-100 py-20 px-4">
+	<div class="container mx-auto text-center">
+		<h2 class="text-4xl font-black text-center text-red-600">I Am Interested In This Program</h2>
+
+		<div class="inline-flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 mt-10 mb-6">
+			<div><input placeholder="Your Full Name" type="text" /></div>
+			<div><input placeholder="Mobile Number" type="text" /></div>
+			<div><input placeholder="Email Address" type="text" /></div>
+		</div>
+
+		<div>
+			
+			<button class="px-12 py-3 rounded bg-black text-white">Send</button>
+		</div>
+
+		<div class="p-10 rounded-lg bg-blue-700 text-white flex flex-col md:flex-row space-y-4 justify-between mt-10 max-w-5xl mx-auto text-left items-center">
+			<div>
+				<h2 class="text-4xl font-bold text-center text-white">Download Brouch</h2>
+				<p class="text-white font-lg ">Lorem Ipsum</p>
+			</div>
+			<div>
+				<button class="bg-white rounded text-gray-800 px-6 font-bold py-3 shadow">Download Now</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+{{ end }}

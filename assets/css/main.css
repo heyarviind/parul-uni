@@ -33,3 +33,8 @@
 .menuLink:hover ul {
 	@apply grid;
 };
+
+input[type="text"],
+select {
+	@apply px-2 py-1.5 rounded bg-white border shadow-sm;
+}
