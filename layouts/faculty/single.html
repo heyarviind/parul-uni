@@ -34,10 +34,12 @@
 			{{ range .Params.programs }}
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-4 tabContent hidden" id="{{ .name | urlize }}">
 					{{ range .courses }}
-						<div class="rounded-lg bg-white shadow p-3 text-sm flex items-center">
-							<div class="w-[40px] text-center"><img src="/img/faculty/{{ .icon }}" class="mx-auto" /></div>
-							<div class="flex-1 font-semibold">{{ .name }}</div>
-						</div>
+						<a href="{{.link}}">
+							<div class="rounded-lg bg-white shadow p-3 text-sm flex items-center">
+								<div class="w-[40px] text-center"><img src="/img/faculty/{{ .icon }}" class="mx-auto" /></div>
+								<div class="flex-1 font-semibold">{{ .name }}</div>
+							</div>
+						</a>
 					{{ end }}
 				</div>
 			{{ end }}
