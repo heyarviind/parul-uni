@@ -8,8 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About DIPLOMA - B.SC. HOSPITALITY AND HOTEL ADMINISTRATION"
-aboutDescription: "The five-year programme provides students with all of the necessary skills, knowledge, and attitude to effectively fulfill supervisory responsibilities in the hospitality industry. In-depth laboratory work is required for students to build experience in the operational areas of Food Production, Food & Beverage Service, Front Office Operation, and House Keeping. It also offers managerial inputs in hotel accounting, food safety and quality, human resource management, facility planning, financial management, strategic management, tourism marketing, and tourism management.
-The course focuses on tactical and strategic management in areas such as event management, finance, human resource management, revenue management, and entrepreneurship."
+aboutDescription: "The five-year programme provides students with all of the necessary skills, knowledge, and attitude to effectively fulfill supervisory responsibilities in the hospitality industry. In-depth laboratory work is required for students to build experience in the operational areas of Food Production, Food & Beverage Service, Front Office Operation, and House Keeping. It also offers managerial inputs in hotel accounting, food safety and quality, human resource management, facility planning, financial management, strategic management, tourism marketing, and tourism management. The course focuses on tactical and strategic management in areas such as event management, finance, human resource management, revenue management, and entrepreneurship."
 
 features:
 - icon: ""

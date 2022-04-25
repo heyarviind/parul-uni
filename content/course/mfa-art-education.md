@@ -8,8 +8,7 @@ coverDescription: "advanced painting techniques with an emphasis on theme develo
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About MFA (Art Education)"
-aboutDescription: "The program will promote the development of artistic skills, the expression of creative processes, and an informed awareness of how art practice intersects with current visual, cultural and societal concerns. A MFA course not only educates but reforms the skills of candidates to enable them become artists in their chosen field. An MFA degree signifies that a professional artist has completed a series of rigorous courses in his or her art form and signals that someone is adept at his or her chosen craft, whether it is a technologically intensive field
-"
+aboutDescription: "The program will promote the development of artistic skills, the expression of creative processes, and an informed awareness of how art practice intersects with current visual, cultural and societal concerns. A MFA course not only educates but reforms the skills of candidates to enable them become artists in their chosen field. An MFA degree signifies that a professional artist has completed a series of rigorous courses in his or her art form and signals that someone is adept at his or her chosen craft, whether it is a technologically intensive field "
 
 features:
 - icon: ""

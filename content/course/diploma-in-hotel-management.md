@@ -8,8 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About DIPLOMA IN HOTEL MANAGEMENT"
-aboutDescription: "The Diploma in Hotel Management programme is designed to provide students with the necessary professional knowledge, technical competence, and abilities to pursue professions in the hotel industry. The curriculum aims to provide both theoretical knowledge and practical skills.
-The program's major goal is to equip students with a thorough understanding of the operational components of the global hospitality business. In addition, the programme will teach students how to communicate effectively in a multicultural hospitality setting."
+aboutDescription: "The Diploma in Hotel Management programme is designed to provide students with the necessary professional knowledge, technical competence, and abilities to pursue professions in the hotel industry. The curriculum aims to provide both theoretical knowledge and practical skills. The program's major goal is to equip students with a thorough understanding of the operational components of the global hospitality business. In addition, the programme will teach students how to communicate effectively in a multicultural hospitality setting."
 
 features:
 - icon: ""

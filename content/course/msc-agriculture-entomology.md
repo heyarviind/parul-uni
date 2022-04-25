@@ -8,10 +8,7 @@ coverDescription: "advanced painting techniques with an emphasis on theme develo
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About  M.SC. (AGRICULTURE) ENTOMOLOGY"
-aboutDescription: "Crop protection is a critical component of agriculture. Insect pests cause massive losses to standing crops, stored grains, and their products. Entomology graduates will play an important role in academia and industry by preventing losses caused by insects with innovative technologies that cause minimal disruption to the environment and non-target organisms, as well as ensuring higher yields from useful insects such as honeybees and silkworms.
-Students will study how to develop sustainable, profitable, and ethical food production models that can be implemented around the world using technology and research.
-During this course, students will learn about soil science, plant life cycle, agricultural soil types, livestock production, and ways to optimize farming techniques.
-On the business side of agriculture, students will learn about agricultural economics, industrial crop use, and international laws governing agriculture and food production."
+aboutDescription: "Crop protection is a critical component of agriculture. Insect pests cause massive losses to standing crops, stored grains, and their products. Entomology graduates will play an important role in academia and industry by preventing losses caused by insects with innovative technologies that cause minimal disruption to the environment and non-target organisms, as well as ensuring higher yields from useful insects such as honeybees and silkworms. Students will study how to develop sustainable, profitable, and ethical food production models that can be implemented around the world using technology and research.During this course, students will learn about soil science, plant life cycle, agricultural soil types, livestock production, and ways to optimize farming techniques. On the business side of agriculture, students will learn about agricultural economics, industrial crop use, and international laws governing agriculture and food production."
 
 features:
 - icon: ""

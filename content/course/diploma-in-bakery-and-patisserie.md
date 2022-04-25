@@ -8,12 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About DIPLOMA IN BAKERY AND PATISSERIET"
-aboutDescription: "This is a comprehensive bakery and patisserie programme that teaches all aspects of baking and confectionery through substantial hands-on instruction and in-class lectures. A great option for anyone looking to create a career in this ever-growing field or who wants to start their own business.
-Skills and knowledge are developed through practical experience.
-A chance for students to experience hands-on learning at varying levels of effort and responsibility.
-Understanding the importance of excellent customer service quality, server-guest relationships, and ethics.
-Designed to give the student "real world" experience in the hospitality industry."
-
+aboutDescription: "This is a comprehensive bakery and patisserie programme that teaches all aspects of baking and confectionery through substantial hands-on instruction and in-class lectures. A great option for anyone looking to create a career in this ever-growing field or who wants to start their own business Skills and knowledge are developed through practical experience. A chance for students to experience hands-on learning at varying levels of effort and responsibility. Understanding the importance of excellent customer service quality, server-guest relationships, and ethics. Designed to give the student "real world" experience in the hospitality industry."
 features:
 - icon: ""
   title: "Executive Chef"

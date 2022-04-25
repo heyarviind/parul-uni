@@ -8,11 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About DIPLOMA IN FOOD PRODUCTION"
-aboutDescription: "The Food Production Diploma programme is designed to help students enhance their culinary abilities and prepare them for careers in the catering and hospitality industries. The programme is intended to teach students about the food production processes of a five-star hotel. Students will be able to comprehend basic cooking methods and vegetable cuts, as well as basic kitchen ethics, stock-making, and soup preparation.
-Assists in preparing students to face the problems of the Food and Beverage Industry.
-Students will get a fundamental grasp of the Food and Beverage business by analyzing its growth and development and reviewing its organizational structure.
-Hospitality experts provide specialized training.
-Basic understanding of the hospitality industry."
+aboutDescription: "The Food Production Diploma programme is designed to help students enhance their culinary abilities and prepare them for careers in the catering and hospitality industries. The programme is intended to teach students about the food production processes of a five-star hotel. Students will be able to comprehend basic cooking methods and vegetable cuts, as well as basic kitchen ethics, stock-making, and soup preparation. Assists in preparing students to face the problems of the Food and Beverage Industry. Students will get a fundamental grasp of the Food and Beverage business by analyzing its growth and development and reviewing its organizational structure.Hospitality experts provide specialized training.Basic understanding of the hospitality industry."
 
 features:
 - icon: ""

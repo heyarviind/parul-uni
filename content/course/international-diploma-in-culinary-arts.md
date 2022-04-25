@@ -8,8 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About INTERNATIONAL DIPLOMA IN CULINARY ARTS "
-aboutDescription: "Culinary Arts Course in partnership with O.T.H.M., U.K. The Culinary Arts Programme combines theory and practice, with a focus on professional culinary abilities and entrepreneurial skills. The diploma in culinary arts course curriculum has been established in accordance with global culinary standards, and it contains specialized cookery and confectionary content, as well as international internships.
-The skill of cooking, formerly confined to the four walls of the kitchen, is today a phenomenon that grows more fascinating by the day. The culinary world is full of surprises, twists, and enormous opportunities."
+aboutDescription: "Culinary Arts Course in partnership with O.T.H.M., U.K. The Culinary Arts Programme combines theory and practice, with a focus on professional culinary abilities and entrepreneurial skills. The diploma in culinary arts course curriculum has been established in accordance with global culinary standards, and it contains specialized cookery and confectionary content, as well as international internships. The skill of cooking, formerly confined to the four walls of the kitchen, is today a phenomenon that grows more fascinating by the day. The culinary world is full of surprises, twists, and enormous opportunities."
 
 features:
 - icon: ""

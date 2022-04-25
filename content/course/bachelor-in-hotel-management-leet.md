@@ -8,11 +8,7 @@ coverDescription: "Modern catering facilities provide the best practical experie
 coverImage: "ba_photograpgy_banner.jpg"
 
 aboutTitle: "About BACHELORS IN HOTEL MANAGEMENT (LEET)"
-aboutDescription: "Bachelors in Hotel Management is an undergraduate programme that educates students to the fundamentals and many aspects of the hospitality industry. The course focuses on the hospitality business as a whole, introducing students to the various sectors and aspects of the industry. As a result, it not only educates students about hotel administration, but also about marketing, sales, and public relations, to name a few topics.
-By obtaining applicable skills and expertise, students will be able to develop successful careers in the hospitality business.
-Students will be able to develop concepts and apply managerial, financial, computer, and technological abilities that are required in the hotel business.
-The course will cultivate in students a strong awareness of professional etiquette, needs, and ethical duties in all aspects of conduct."
-
+aboutDescription: "Bachelors in Hotel Management is an undergraduate programme that educates students to the fundamentals and many aspects of the hospitality industry. The course focuses on the hospitality business as a whole, introducing students to the various sectors and aspects of the industry. As a result, it not only educates students about hotel administration, but also about marketing, sales, and public relations, to name a few topics By obtaining applicable skills and expertise, students will be able to develop successful careers in the hospitality business. Students will be able to develop concepts and apply managerial, financial, computer, and technological abilities that are required in the hotel business. The course will cultivate in students a strong awareness of professional etiquette, needs, and ethical duties in all aspects of conduct."
 features:
 - icon: ""
   title: "Hospital administration and catering"
