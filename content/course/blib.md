@@ -5,19 +5,19 @@ draft: false
 
 coverHeading: "B.Lib "
 coverDescription: "Attain journalistic skills in mass media"
-coverImage: "B Lib.jpg"
+coverImage: "blib_banner.jpg"
 
 aboutTitle: "About B.Lib "
 aboutDescription: "Academic libraries Science is an interdisciplinary discipline that includes the study of library administration ideas and procedures. Library and information science is another name for library science. Bachelor of Library & Information Science is an educational degree conferred after completing a library science course or programme. The Indian Library Association is a major organisation dedicated to the advancement of the library movement and development. It is also in charge of accrediting universities that provide Library and Information Science education, as well as training and promotion of Library Science Education and the enhancement of library training in India. Library & Information Science Courses are primarily concerned with imparting knowledge of the ideas and methods of traditional Library Science, as well as the latest technology employed in these operations."
 
 features:
-- icon: ""
+- icon: "library.png"
   title: "Academic librarian"
-- icon: ""
+- icon: "library_icons.png"
   title: "Library attendant"
-- icon: ""
+- icon: "data.png"
   title: "Information analyst "
-- icon: ""
+- icon: "columnist.png"
   title: "Technical writer"
 
 feeTitle: "B.Lib "

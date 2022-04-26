@@ -4,20 +4,20 @@ date: 2022-04-23T15:46:10+05:30
 draft: false
 
 coverHeading: "MA (Journalism & Mass Communication)"
-coverDescription: "Attain journalistic skills in mass media"
-coverImage: "MA Journalism.jpg"
+coverDescription: "Master your journalistic approach in mass media"
+coverImage: "ma_journalism_mass_communication.jpg"
 
 aboutTitle: "About MA (Journalism & Mass Communication)"
 aboutDescription: "M.A. Journalism & Mass Communication is a journalism postgraduate programme. The theories of mass communication are interwoven into the program's disciplines, which include film and television, journalism, public relations, advertising, and multimedia. Students are kept up to date not only on the evolution of media trends, but also on the style and presentation of its contents, thanks to the integration of disciplines. Such learning experiences, which integrate theory and practise, will not only shape students into autonomous individuals, but will also prepare them to have a strong flexibility of thinking and innovative problem-solving abilities in accordance with the industry. As a result, graduates of this programme will have an edge in terms of increased professional inventiveness and ability to operate in the sector."
 
 features:
-- icon: ""
+- icon: "columnist.png"
   title: "Columnists"
-- icon: ""
+- icon: "subject.png"
   title: "Feature Writer"
-- icon: ""
+- icon: "journalist.png"
   title: "Journalist"
-- icon: ""
+- icon: "News_icons.png"
   title: "News Analyst"
 
 feeTitle: "MA (Journalism & Mass Communication)"
