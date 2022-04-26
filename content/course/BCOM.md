@@ -5,19 +5,19 @@ draft: false
 
 coverHeading: "BACHELOR OF COMMERCE"
 coverDescription: "Pursue a career in accountancy"
-coverImage: "BCOM.jpg"
+coverImage: "bachelor_of_commerce.jpg"
 
 aboutTitle: "About BACHELOR OF COMMERCE"
 aboutDescription: "Our B.COM Program is an Outcome Based Education model that is a three-year, six-semester full-time programme with a Selection Based Credit System (CBCS) and Grading Evaluation System. This curriculum includes baseline courses, core courses, electives for specialisation, enrichment courses, and experimental learning. The suggested curriculum takes the B.COM programme to the next level by implementing Outcome Based Education and developing experts who are skilled in their chosen domain, adaptable to the environment and culture, unfailing to the communities, ethical in all actions, and with a global outlook and approach. These goals will be met through rigorous academic processes, up-to-date and relevant curriculum, substantial industry contact and partnerships, sports, and a lively student body."
 
 features:
-- icon: ""
+- icon: "finance.png"
   title: "Financial Risk Manager"
-- icon: ""
+- icon: "ca_icons.png"
   title: "Chartered Accountancy (CA)"
-- icon: ""
+- icon: "data.png"
   title: "Chartered Financial Analyst"
-- icon: ""
+- icon: "management-sector.png"
   title: "Company Secretary"
 
 feeTitle: "BACHELOR OF COMMERCE"

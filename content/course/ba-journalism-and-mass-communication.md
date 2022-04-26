@@ -5,19 +5,19 @@ draft: false
 
 coverHeading: "BA Journalism & Mass Communication"
 coverDescription: "Attain journalistic skills in mass media"
-coverImage: "BA Journalism.jpg"
+coverImage: "Bba_journalism_mass_communication.jpg"
 
 aboutTitle: "About BA Journalism & Mass Communication"
 aboutDescription: "Bachelor of Journalism and Mass Communication (B.J.M.C.) is an undergraduate Mass Communication programme. The degree course provides students with basic journalistic skills in various mass media, exposes students to recent developments in media issues and media research, and strengthens the foundations for various mass media technologies such as computer applications, respective software and hardware in print, radio, television, internet, and the like. This degree would prepare students to work in a variety of media, including print, radio, television, the Internet, and allied disciplines. Students can pursue a full-time career in media or work as freelancers."
 
 features:
-- icon: ""
+- icon: "columnist.png"
   title: "Columnists"
-- icon: ""
+- icon: "subject.png"
   title: "Feature Writer"
-- icon: ""
+- icon: "journalist.png"
   title: "Journalist"
-- icon: ""
+- icon: "News_icons.png"
   title: "News Analyst"
 
 feeTitle: "BA Journalism & Mass Communication"

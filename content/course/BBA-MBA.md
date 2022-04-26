@@ -5,19 +5,19 @@ draft: false
 
 coverHeading: "BBA-MBA"
 coverDescription: "Reach your career goals with an integrated business degree"
-coverImage: "BBA-MBA.jpg"
+coverImage: "bba_mba_banner.jpg"
 
 aboutTitle: "About BBA-MBA"
 aboutDescription: "The BBA MBA dual degree programme is a five-year undergraduate plus postgraduate integrated study that a candidate can begin as soon as he or she completes his or her 10+2 examinations. It integrates both the undergraduate BBA and the postgraduate MBA degree programmes into a single integrated course. Bachelor of Business Administration is an abbreviation for Bachelor of Business Administration. Candidates can pursue it immediately after completing their 10+2. The distinct BBA programme lasts three years. An MBA or Master of Business Administration, on the other hand, may be pursued only after completing a 10+2+3 or 10+2+4 level academic programme. MBA programmes last two years. Candidates interested in pursuing an integrated BBA MBA must apply for both degrees just once because it is a dual degree programme."
 
 features:
-- icon: ""
+- icon: "finance.png"
   title: "Finance Manager"
-- icon: ""
+- icon: "management-sector.png"
   title: "Human Resource Manager"
-- icon: ""
+- icon: "administrator.png"
   title: "Marketing Manager"
-- icon: ""
+- icon: "superintendent.png"
   title: "Product Manager"
 
 feeTitle: "BBA-MBA"

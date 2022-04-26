@@ -5,19 +5,19 @@ draft: false
 
 coverHeading: "B.COM-MBA"
 coverDescription: "Reach your career goals with an integrated commerce & business degree"
-coverImage: "BCOM-MBA.jpg"
+coverImage: "bcom_mba_banner.jpg"
 
 aboutTitle: "About B.COM-MBA"
 aboutDescription: "Bachelor of Commerce (Hons.) MBA is a dual degree programme that combines two degrees. It combines B.Com (Hons) and MBA degree programmes, therefore the name B.Com (Hons) MBA B.Com (Hons) is a specialised degree programme in the field of business. It is more valuable than a general (Hons) degree since it covers more subjects for specialisation. MBA programmes, on the other hand, are in high demand among those interested in business administration. General Management trains applicants in the managerial, functional, and operational requirements of an organisation in order to make it productive and efficient. It takes five years to finish an integrated (Hons) (Hons.) MBA degree. Furthermore, this degree includes theory-based lectures, internships, and many universities provide one semester or, in some circumstances, one year abroad at another college as part of the curriculum."
 
 features:
-- icon: ""
+- icon: "finance.png"
   title: "Finance Manager"
-- icon: ""
+- icon: "management-sector.png"
   title: "Human Resource Manager"
-- icon: ""
+- icon: "finance.png"
   title: "Finance Marketing"
-- icon: ""
+- icon: "director_icons.png"
   title: "Business Operations"
 
 feeTitle: "B.COM-MBA"
