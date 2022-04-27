@@ -1,0 +1,271 @@
+
+    
+        var userIdentityNiaa    = '14a6a35892e342eea2e3603e12516916'
+        if (typeof(Storage) !== "undefined") {
+            var storedUserIdentity  = window.localStorage.getItem('userIdentityNiaa');
+            if(typeof storedUserIdentity!=="undefined" && storedUserIdentity!==null && storedUserIdentity!='' && storedUserIdentity!==false){
+                userIdentityNiaa    = storedUserIdentity;
+            }else{
+                window.localStorage.setItem('userIdentityNiaa',userIdentityNiaa);
+            }
+        }
+        var sessionSaved = false;
+        //if (typeof npf_c != "undefined" && npf_c && typeof npf_w != "undefined" && npf_w) {
+            if (typeof jQuery == 'undefined'){
+               var script = document.createElement('script');
+               script.type = "text/javascript";
+               script.src = "https://chatcdn.npfs.co/static/backend/js/core/jquery.min.js";
+               script.onload = function() {
+                    var jQuery = window.jQuery;
+                    cIframe();
+                };
+               document.getElementsByTagName('head')[0].appendChild(script);
+            }else{
+                cIframe();
+            }
+        //}
+
+        function cBrow(){
+            // Opera 8.0+
+            var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+            // Firefox 1.0+
+            var isFirefox = typeof InstallTrigger !== 'undefined';
+
+            // Safari 3.0+ "[object HTMLElementConstructor]"
+            var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+            // Internet Explorer 6-11
+            var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+            // Edge 20+
+            var isEdge = !isIE && !!window.StyleMedia;
+
+            // Chrome 1+
+            var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+            // Blink engine detection
+            var isBlink = (isChrome || isOpera) && !!window.CSS;
+            if(isFirefox || isChrome || isOpera){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return {
+                href: url,
+                protocol: a.protocol.replace(':',''),
+                host: a.hostname,
+            hostname: a.hostname,
+                port: a.port,
+                search: a.search,
+                params: (function(){
+                    var ret = {},
+                    seg = a.search.replace(/^\?/,'').split('&'),
+                    len = seg.length, i = 0, s;
+                    for (;i<len;i++) {
+                        if (!seg[i]) { continue; }
+                        s = seg[i].split('=');
+                        ret[s[0]] = s[1];
+                    }
+                    return ret;
+                })(),
+                file: (a.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
+                hash: a.hash.replace('#',''),
+                pathname: a.pathname.replace(/^([^\/])/,'/$1'),
+                relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
+                segments: a.pathname.replace(/^\//,'').split('/')
+            };
+        }
+
+
+        function cIframe(){
+            var npfwg = rCookie("npfwg");
+            var npf_fx = rCookie("npf_fx");
+            var r = document.referrer;
+            var l = location.hostname;
+            var u = location.href;
+            var cu = location.href;
+
+            s=1;
+
+            if(u.indexOf("utm_source")>0 || u.indexOf("gclid")>0){
+                s=0;
+            }else if(npf_fx!=""){
+                var r = rCookie("npf_r");
+                var l = rCookie("npf_l");
+                var u = rCookie("npf_u");
+            }
+
+            if (npfwg == "" || s==0) {
+                if(l=="localhost"){
+                   dco=l;
+                }else{
+                   dco = (l.match(/([^.]+)\.\w{2,3}(?:\.\w{2})?$/) || [])[0];
+                }
+                document.cookie = "npfwg=1;domain=."+dco+";expires=0; path=/";
+                document.cookie = "npf_r="+r+";domain=."+dco+";expires=0; path=/";
+                document.cookie = "npf_l="+l+";domain=."+dco+";expires=0; path=/";
+                document.cookie = "npf_u="+u+";domain=."+dco+";expires=0; path=/";
+            }else{
+                var r = rCookie("npf_r");
+                var l = rCookie("npf_l");
+                var u = rCookie("npf_u");
+            }
+
+            if (typeof npf_m != "undefined" && npf_m=="preview"){
+                npf_m=npf_m;
+            }else{
+                npf_m="";
+            }
+
+            var npf_furl='';
+            if(cBrow()){
+                var fu=new URL(u);
+            }else{
+                var fu=parseURL(u);
+            }
+            var npf_qV = fu.search.replace('?', '').split('&'); //window.location
+            var npf_qL = '';
+            if (npf_qV != '') {
+                for (i = 0; i < npf_qV.length; i++) {
+                    if(npf_qL!='')npf_qL=npf_qL+"||";
+                    var ParamKeys = npf_qV[i].split('=');
+
+                    if((ParamKeys[0].toLowerCase() =='utm_placement') ||
+                       (ParamKeys[0].toLowerCase() =='utm_keyword')) {
+                           npf_qL=npf_qL+ParamKeys[0]+"@@"+ npf_qV[i].replace(ParamKeys[0]+'=',"");
+                    } else {
+                        npf_qL=npf_qL+ParamKeys[0]+"@@"+ParamKeys[1];
+                    }
+                }
+            }
+            var npf_r = r; //document.referrer;
+            url_track='https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaa-chatbot/3215f35478c51bb2?';
+
+
+
+            jQuery(".npf_chatbots").each(function() {
+                npf_height=jQuery(this).data("height");
+                //npf_c=jQuery(this).data("c");
+                npf_w=jQuery(this).data("w");
+
+                npf_furl=url_track+"&r="+npf_r+"&q="+npf_qL+"&w="+npf_w+"&m="+npf_m+"&niaa_ui="+userIdentityNiaa;
+                if(npf_height=="parent"){
+                   var npf_height=document.getElementsByClassName("npf_chatbots")[0].parentElement.clientHeight;
+                   npf_height=npf_height+"px";
+                }
+
+                jQuery(this).html('');
+
+                jQuery('<iframe>', {
+                src: npf_furl,
+                allow:"sync-xhr *",
+                frameborder: 0,
+                id: "chatbox_frame",
+                name: "chatbox_frame",
+                //height: npf_height,
+                height: '100%',
+                width: '100%'
+                }).appendTo(this);
+
+                
+                    
+                            jQuery('#chatbox_frame').on("load", function() {
+                                setTimeout(function() {
+                                    if($('#__eechatIcon').css('display') != 'none') {
+                                        jQuery("#__eechatIcon").trigger("click");
+                                    }
+                                }, 172800000);
+                            });
+                    
+
+                
+
+                setIconLayout();
+            });
+        }
+
+        function loadCustomIconStyle(){
+            if (typeof npf_m != "undefined" && npf_m=="preview"){
+                npf_m=npf_m;
+            }else{
+                npf_m="";
+            }
+            npf_w=jQuery(".npf_chatbots").data("w");
+            npf_params="?w="+npf_w+"&m="+npf_m+"&acId="+'3215f35478c51bb2'
+
+            // Create new link Element
+            var link = document.createElement('link');
+            // set the attributes for link element
+            link.rel = 'stylesheet';
+
+            link.type = 'text/css';
+
+            link.href = "https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/custom-chatbot-icon-style.css/3215f35478c51bb2"+npf_params;
+
+            // Get HTML head element to append
+            // link element to it
+            document.getElementsByTagName('HEAD')[0].appendChild(link);
+            setIconLayout();
+        }
+        function setIconLayout(){
+            iconHtml = '<div class="default-chatbot-indicator" style="display:block;"><div id="eeChatIndicator">'
+            
+                iconHtml += '<div class="indicator"><div onclick="clickIconIndicator(); clickIconIndicatorMinimize();">Hey! I am Niaa... Your Admission Assistant.</div><a class="close-indicator" onclick="clickCloseIndicator();"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1490 1245q0 40-24 68l-136 136q-24 24-68 24t-68-28l-294-294-294 294q-24 24-68 24t-68-28l-136-136q-24-24-24-68t24-68l294-294-294-294q-24-24-24-68t24-68l136-136q24-24 68-24t68 28l294 294 294-294q24-24 68-28t68 28l136 136q28 24 24 68t-24 68l-294 294 294 294q24 24 24 68z" fill="#fff"></path></svg></a></div>'
+            
+            iconHtml += '</div><div id="__eechatIcon" onclick="clickIconIndicator(); clickIconIndicatorMinimize();" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Niaa"><img src="https://chatcdn.npfs.co/static/backend/img/niaa.png" /></div></div>';
+
+            iconHtml += '<style>.headerClose{display:flex;position:absolute;top:14px;right:10px;}.close-icon svg path{fill: #fff;}.close-indicator{position:absolute;top:-4px;left:-3px;text-align:center;}.close-indicator svg{background-color:#ff0000;line-height:16px;border-radius:50%;padding:2px;}.npf_chatbots{transform: translateY(110%);transition: transform 0.5s ease 0s;height:75%;height:80vh;position:fixed;right:10px;z-index:999999;width:400px;bottom:0;border-radius:10px 10px 0 0;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);overflow:hidden}@media (max-width: 769px){.npf_chatbots{border-radius:0;height:100%;right:0;width:100%;}}.npf_chatbots.active{transform: translateY(0%);}.indicator{width:220px;cursor:pointer;position:fixed;bottom:15px;right:95px;background-color:#fff;line-height:1.6;padding:15px;z-index:2018;font-size:14px;border-radius:10px 0 10px 10px;box-shadow:0 4px 30px 0 rgba(0,0,0,.05),0 6px 20px 0 rgba(0,0,0,.19)}.indicator:after{content:"";position:absolute;margin-top:-6px;margin-left:-5px;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid #fff;transform:rotate(-45deg);right:-11px;top:4px}#__eechatIcon{position:fixed;right:30px;bottom:30px;z-index:214483646;cursor:pointer;width:55px;height:55px;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);border-radius:50%;overflow:hidden;padding:5px;background-color:#75b740;}#__eechatIcon img{max-width:100%; height:auto; border-radius:50%;}.minimizeIcon, .iconClose, .iconRestart{width:20px;height:20px;display:block}.headerClose a{padding:5px;}.iconBg{background-size:contain;}.minimizeIcon{margin-right:3px;background-image:url(https://niaa.nopaperforms.com/img/chatbot/minimize.png);}.iconClose{background-image:url(https://niaa.nopaperforms.com/img/chatbot/close.png);}.iconRestart{width:13px;height:13px;margin-top: 4px;margin-right: 3px;background-image:url(https://niaa.nopaperforms.com/img/chatbot/refresh.png);}</style>';
+
+            iconHtml += '<script>jQuery(".npf_chatbots").show(); jQuery("#__eechatIcon").show(); jQuery(".default-chatbot-indicator").show();</script>';
+
+            jQuery(".npf_chatbots").after(iconHtml);
+
+            jQuery(".npf_chatbots").append('<div class="headerClose"><a class="btn-restart" href="javascript:refreshChatBotSession();"><span class="iconRestart iconBg" title="Restart"></span></a><a href="javascript:void(0);" class="close-icon btn-minimize"><span onclick="clickIconIndicatorMinimize();" class="minimizeIcon iconBg" title="Minimize"></span></a></div>');
+        }
+        function rCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return '';
+        }
+
+        function clickIconIndicator(){
+            startChatBotSession();
+        }
+
+        function clickIconIndicatorMinimize(){
+            jQuery(".npf_chatbots").toggleClass("active");
+            if(jQuery(".npf_chatbots").hasClass("active")) { }
+            jQuery("#__eechatIcon").toggle();
+        }
+
+        function clickCloseIndicator(){
+            jQuery("#eeChatIndicator").hide();
+        }
+        function startChatBotSession(){
+            setTimeout(function(){
+                let frame = document.getElementById("chatbox_frame");
+                frame.contentWindow.postMessage("startChat", "https://chatbot.in1.nopaperforms.com");
+            }, 3000);
+        }
+
+        function refreshChatBotSession(){
+            let frame = document.getElementById("chatbox_frame");
+            frame.contentWindow.postMessage("restartChat", "https://chatbot.in1.nopaperforms.com");
+        }
+
+        function clearBotSession(){
+            let frame = document.getElementById("chatbox_frame");
+            frame.contentWindow.postMessage("clearChat", "https://chatbot.in1.nopaperforms.com");
+        }
+    

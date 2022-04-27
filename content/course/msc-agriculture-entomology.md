@@ -5,24 +5,24 @@ draft: false
 
 coverHeading: " M.SC. (AGRICULTURE) ENTOMOLOGY"
 coverDescription: "advanced painting techniques with an emphasis on theme development"
-coverImage: "ba_photograpgy_banner.jpg"
+coverImage: "msc-agriculture-entomology.jpg"
 
 aboutTitle: "About  M.SC. (AGRICULTURE) ENTOMOLOGY"
 aboutDescription: "Crop protection is a critical component of agriculture. Insect pests cause massive losses to standing crops, stored grains, and their products. Entomology graduates will play an important role in academia and industry by preventing losses caused by insects with innovative technologies that cause minimal disruption to the environment and non-target organisms, as well as ensuring higher yields from useful insects such as honeybees and silkworms. Students will study how to develop sustainable, profitable, and ethical food production models that can be implemented around the world using technology and research.During this course, students will learn about soil science, plant life cycle, agricultural soil types, livestock production, and ways to optimize farming techniques. On the business side of agriculture, students will learn about agricultural economics, industrial crop use, and international laws governing agriculture and food production."
 
 features:
-- icon: ""
+- icon: "Entomologist.png"
   title: "Agricultural Entomologist"
-- icon: ""
+- icon: "plant.png"
   title: "Research Associate"
-- icon: ""
+- icon: "Forensic Labs.png"
   title: "Forensic Labs"
-- icon: ""
+- icon: "food2.png"
   title: "Assistant Plant Pathologist"
 
 feeTitle: " M.SC. (AGRICULTURE) ENTOMOLOGY"
-feeString: "₹81,200/- Anually"
-feeSubString: "Lorem iPsum"
+feeString: "Registration Fee (One Time)	15,000/-INR | Semester Fee	49,900/-INR"
+feeSubString: "Duration: 2 Years"
 feeImage: "chandigarh-university.png"
 
 facilites:
