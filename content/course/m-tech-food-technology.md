@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "M.Tech Food Technology "
 date: 2022-04-23T15:46:10+05:30
 draft: false
@@ -21,30 +20,6 @@ features:
   title: "Organic Chemist"
 
 feeTitle: "M.Tech Food Technology "
-=======
-title: "M.Tech – Food Technology "
-date: 2022-04-23T15:46:10+05:30
-draft: false
-
-coverHeading: "M.Tech – Food Technology "
-coverDescription: "your world class career through our world class education"
-coverImage: "m-tech-food-technology.jpg"
-
-aboutTitle: "About M.Tech – Food Technology "
-aboutDescription: "Food technology is an area of science it deals with all of the techniques and activities involved in the preservation, processing, and manufacture of food items. Food technology encompasses all techniques and processing methods used to create, study, manufacture, produce, preserve, and process food or related substances. A food scientist develops novel techniques for making and storing food, as well as keeping it safe and hygienic, as well as flavour and resistance to natural hazards such as microorganisms and toxins. Food processing businesses are responsible for the processing, preservation, packaging, labelling creation, quality control, and research and development of dairy products, food grains, confectionary goods, fish products, meat and poultry products, and fruit and vegetable products. Chemistry, biology, engineering, nutrition, and microbiology are examples of sciences."
-
-features:
-- icon: ""
-  title: "FOOD INSPECTOR"
-- icon: ""
-  title: "FOOD PRODUCT DEVELOPMENT DIRECTOR"
-- icon: ""
-  title: "FOOD ENGINEER"
-- icon: ""
-  title: "QUALITY CONTROLLER"
-
-feeTitle: "M.Tech – Food Technology "
->>>>>>> 93b55a3fb905abcfb39f7b07aae624acfcbc1816
 feeString: "₹81,200/- Anually"
 feeSubString: "Lorem iPsum"
 feeImage: "chandigarh-university.png"
