@@ -2,14 +2,21 @@
 <html lang="{{ .Language.Lang }}">
 <head>
     {{ partial "head.html" . }}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     {{ partial "header.html" . }}
         {{ block "main" . }}{{ .Content }}{{ end }}
     {{ partial "footer.html" . }}
 
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
     <script>
         $(".tab").first().addClass("bg-red-600").removeClass("bg-sky-900");
         $(".tabContent").first().removeClass("hidden");
