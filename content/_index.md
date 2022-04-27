@@ -12,4 +12,14 @@ heroImages:
   link: ""
 - image: "220-SM763471.jpg.jpg"
   link: ""
+
+internationalArticles:
+- title: "Lorem Ipsum"
+  image: "students.jpeg"
+  link: ""
+  description: "something goes here"
+- title: "Lorem Ipsum"
+  image: "students.jpeg"
+  description: "something goes here"
+  link: ""
 ---
