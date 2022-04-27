@@ -1,35 +1,36 @@
---- 
+---
 title: "BBA-MBA"
 date: 2022-04-23T15:46:10+05:30
 draft: false
 
-coverHeading: " BBA-MBA "
-coverDescription: "Bachelor of Business Administration-Master of Business Administration is the abbreviation for Bachelor of Business Administration-Master of Business Administration. The BBA MBA is a ten-semester, five-year integrated degree programme. Through theoretical understanding and application of those concepts during the internship experience, this complete course will prepare students for managerial careers."
-coverImage: "ballb integrated.jpeg"
+coverHeading: "BBA-MBA"
+coverDescription: "Reach your career goals with an integrated business degree"
+coverImage: "bba_mba_banner.jpg"
+
 aboutTitle: "About BBA-MBA"
-aboutDescription: "The BBA MBA dual degree programme is a five-year undergraduate plus postgraduate integrated course that a candidate can pursue right after passing his or her 10+2 exams. It combines both undergraduate BBA and postgraduate MBA degree programmes in one integrated course. BBA stands for Bachelor of Business Administration. Candidates can pursue it right after completion of 10+2. The duration of the separate BBA is 3 years. On the other hand, an MBA or Master of Business Administration can be pursued only after completion of a 10+2+3 or 10+2+4 level of academic programme. The duration of MBA is 2 years. Candidates willing to pursue an integrated BBA MBA are required to apply only single time for both the degrees as it is a dual degree programme.."
+aboutDescription: "The BBA MBA dual degree programme is a five-year undergraduate plus postgraduate integrated study that a candidate can begin as soon as he or she completes his or her 10+2 examinations. It integrates both the undergraduate BBA and the postgraduate MBA degree programmes into a single integrated course. Bachelor of Business Administration is an abbreviation for Bachelor of Business Administration. Candidates can pursue it immediately after completing their 10+2. The distinct BBA programme lasts three years. An MBA or Master of Business Administration, on the other hand, may be pursued only after completing a 10+2+3 or 10+2+4 level academic programme. MBA programmes last two years. Candidates interested in pursuing an integrated BBA MBA must apply for both degrees just once because it is a dual degree programme."
 
 features:
-- icon: ""
-  title: "Sales Manager"
-- icon: ""
-  title: "Brand Manager:"
-- icon: ""
+- icon: "finance.png"
+  title: "Finance Manager"
+- icon: "management-sector.png"
+  title: "Human Resource Manager"
+- icon: "administrator.png"
   title: "Marketing Manager"
-- icon: ""
-  title: "Project Manager:."
+- icon: "superintendent.png"
+  title: "Product Manager"
 
-feeTitle: "BBA-MBA "
+feeTitle: "BBA-MBA"
 feeString: "₹81,200/- Anually"
 feeSubString: "Lorem iPsum"
-feeImage: "chandigarh-university.png"
+feeImage: "RIMT-university.png"
 
 facilites:
 - image: "220-SM763471.jpg"
-  title: "21st-century practical training"
+  title: "21st century practical training"
   description: "For a better understanding of concepts, we have set up advanced 21st-century tools equipped with advanced training methods so that students can learn every concept practically in a better way."
 - image: "220-SM881904.jpg"
-  title: "Professional Career Mentoring"
+  title: "Professional Career Mentoring."
   description: "We at RIMT make sure that every student gets professional career mentoring from the industry experts to set career targets & for this we have created a career & placement cell too."
 - image: "220-SM715233.jpg"
   title: "Industry Placements"
