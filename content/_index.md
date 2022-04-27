@@ -22,4 +22,24 @@ internationalArticles:
   image: "students.jpeg"
   description: "something goes here"
   link: ""
+
+rankings:
+- image: ""
+  link: ""
+- image: ""
+  link: ""
+- image: ""
+  link: ""
+- image: ""
+  link: ""
+- image: ""
+  link: ""
+
+testimonials:
+- name: "Someone"
+  image: ""
+  testimonial: "Shubham Yadav added you to the Assigned Dev field of In class creation form Class e"
+- name: "Someone"
+  image: ""
+  testimonial: "Shubham Yadav added you to the Assigned Dev field of In class creation form Class e"
 ---

@@ -31,7 +31,7 @@
 }
 
 .menuLink:hover ul {
-	@apply grid;
+	@apply grid z-40;
 };
 
 input[type="text"],
